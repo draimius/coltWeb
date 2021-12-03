@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hi how you doing?</title>
+</head>
+
+<body>
+    <h1 id="to-top">Panthers</h1>
+    <!-- div used to hold thing or group things together 
+    div is a block element a sort of general container-->
+    <div>devition</div>
+    <hr>
+    <!-- a spn is a inline element gereic element used to target specified content
+    ina line-->
+    <span>its a me a <a href="span.com"><sub>SPAN</sub></a></span>
+
+
+    <h2><sup>1</sup>/<sub>2</sub></h2>
+    <h2>1 &lt; 2 &gt; 1 &amp;</h2>
+    <p>hi im <sup>a</sup> paragraph</p>
+    <br>
+    <h2>ordered list</h2>
+    <h3><a href="About-p.html" target="_blank"> Go to about panthers page now!</a></h3>
+    <!-- alt attribute will be read by screen reader -->
+    <!-- COMMENT SHORT CUT CTLR + / -->
+
+    <ol>
+        <li>v</li>
+        <li>f</li>
+        <li>a
+            <ul>
+                <li>d
+                    <ol>
+                        <li>7</li>
+                        <li>4</li>
+                        <li>1</li>
+                    </ol>
+                </li>
+                <li><a href="https://youtube.com" target="_blank">d</a></li>
+                <li>d</li>
+            </ul>
+        </li>
+        <li><a href="#to-top">d</a></li>
+    </ol>
+
+    <h4>randon cat picture hope you enjoy</h4>
+    <img src="images/kitty-under-bed.jpg" alt="funny cat">
+    <h4>another randon picture of a cat</h4>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cat_poster_1.jpg/1024px-Cat_poster_1.jpg">
+
+    <table>
+        <thead>
+            <tr>
+                <th>animal name</th>
+                <th>weight</th>
+                <th>height</th>
+                <th>flighted</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>eagle</td>
+                <td>20lb</td>
+                <td>100in</td>
+                <td>yes</td>
+            </tr>
+            <tr>
+                <td>falcon</td>
+                <td>15lb</td>
+                <td>75in</td>
+                <td>yes</td>
+            </tr>
+            <tr>
+                <td>emu</td>
+                <td>200lb</td>
+                <td>500in</td>
+                <td>no</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>version 2 table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">animal</th>
+                <th colspan="2">avarage mass</th>
+                <th rowspan="2">flighted</th>
+            </tr>
+            <tr>
+                <th>LB</th>
+                <th>KG</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>eagle</td>
+                <td>20lb</td>
+                <td>100kg</td>
+                <td>yes</td>
+            </tr>
+            <tr>
+                <td>falcon</td>
+                <td>15lb</td>
+                <td>75ikg</td>
+                <td>yes</td>
+            </tr>
+            <tr>
+                <td>emu</td>
+                <td>200lb</td>
+                <td>500kg</td>
+                <td>no</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr><br>
+    <form action="where-info-gets-sent">
+        <p>
+            <label for="uname">enter uname</label>
+            <input type="text" id="uname" placeholder="uname" name="uname">
+        </p>
+        <p>
+            <label for="pass">enter password</label>
+            <input type="password" id="pass" placeholder="enter password" name="password">
+        </p>
+        <p>
+            <label for="color">enter a color</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <label for="number">select number</label>
+            <input type="number" placeholder="number" name="number" step="5" value="10" min="10" max="50">
+        </p>
+        <label for="email">enter email
+            <input type="email" id="email" placeholder="email" name="email">
+        </label>
+
+
+        <input type="time" placeholder="time" name="time">
+        <button type="submit">Submit</button>
+        <button type="button">button for fun</button>
+        <!-- return given in url upon submiting of filed out form -->
+        <!-- http://127.0.0.1:5500/where-info-gets-sent?uname=draimius&password=123456&color=%23000000&email=jrsworkshop17%40gmail.com&number=11&time=06%3A25 -->
+    </form>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h2>hijaking searches</h2>
+    <h3>serach youtube and google</h3>
+    <form action="https://www.youtube.com/results?search">
+        <input type="text" name="q">
+        <button type="submit">serch youtube</button>
+    </form>
+    <form action="https://www.google.com/search?">
+        <input type="text" name="q">
+        <button>serch google</button>
+    </form>
+    <!-- two youtube search for utilizing dif name but same result just depent on how website set thier search value -->
+    <form action="https://www.youtube.com/results?" target="_blank">
+        <input type="text" name="search_query">
+        <button>serch youtube again</button>
+    </form>
+    <!-- can also have forms without button, user can submit by using enter key same result  -->
+    <form action="https://www.youtube.com/results?" target="_blank">
+        <input type="text" name="search_query">
+    </form>
+    <h2>
+        more inputs
+    </h2>
+    <form action="order">
+        <input type="checkbox" name="agree-tos" id="agree-tos" checked value="agree">
+        <label for="agree-tos">Agree to term of service</label>
+        <button>submit</button>
+
+        <label for="S">Small</label>
+        <input type="radio" name="size" id="S" value="small">
+        <label for="M">Medium</label>
+        <input type="radio" name="size" id="M" value="medium">
+        <label for="L">Large</label>
+        <input type="radio" name="size" id="L" value="large">
+        <lable for="color">select color</lable>
+        <select name="color" id="color">
+            <!-- can leave first option blank and placehomlder to provide more context to options -->
+            <option value=".">Please chose an option</option>
+            <option value=red>Red</option>
+            <option value=red>black</option>
+            <option value=red>blue</option>
+            <option value=red>orange</option>
+            <option value=red>yellow</option>
+        </select>
+
+
+    </form>
+    <!-- http://127.0.0.1:5500/order?agree-tos=agree&size=medium  output from above form submition-->
+    <form action="quantity">
+        <lable for="num-shirts">number of shirts</lable>
+        <input type="range" id="num-shirts" name="quantity" step="5" min="5" max="50" value="30">
+        <button type="submit">submit</button>
+    </form>
+    <!-- min max name value and range/text area input -->
+    <!-- for textarea tag we can set initial size row and colmns displyed with rows="x"  and cols="x" -->
+    <!--    name atribute always goes within the input  -->
+    <!--    slect /options plus textarea are their own tag. act justlike input but have thier onw specialized tags -->
+    <form action="message">
+        <lable for="message">additinal information</lable>
+        <textarea id="message" rows="10" cols="50" name="message"></textarea>
+        <button type="submit">submit</button>
+    </form>
+    <h2>validations demo</h2>
+    <form action="username">
+        <!-- in this example with username we set some pereameters that would have to be met but user when inputing info 
+        to submit. required insuring its filed before allowing submit then min max legth to give instruction 
+        of how long or short the info is allowed to be -->
+        <label for="username">verify username</label>
+        <input type="text" id="username" name="verify" required minlength="5" maxlength="20">
+        <!-- input type like email and url have existing validation its looking for a spesic pattern to be follow 
+        not so much making sure its real of functioning just following pattern expected -->
+        <label for="email">verify email</label>
+        <input type="email" id="email" name="email" required minlength="5" maxlength="20">
+        <label for="url">verify url</label>
+        <input type="url" id="url" name="url" required>
+        <button type="submit">submit</button>
+    </form>
+
+<!-- fun ragistration form we build as an example with previuso notes and what we learned coded just by looking at the picture of what wanted -->
+    <h1>Race Registration!</h1>
+    <form action="registration">
+        <div id="names">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname" required>
+        </div>
+        <div id=sone>
+            <p>Select a Race:</p>
+            <p>
+                <label for="frun">Fun Run 5K</label>
+                <input type="radio" id="frun" value="frun" name="sone" required>
+            </p>
+            <p>
+                <label for="hmara">Half Marathon</label>
+                <input type="radio" id="hmara" value="hmara" name="sone" required>
+            </p>
+            <p>
+                <label for="fmara">Full Marathon</label>
+                <input type="radio" id="fmara" value="fmara" name="sone" required>
+            </p>
+        </div>
+
+        <div id="emailnpass">
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="mail" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="age">Select Age Group</label>
+            <select id="age" name="age" required>
+                <option value="0-18">Under 18</option>
+                <option value="18-25">18 to 25</option>
+                <option value="25-30+">25 to 30+</option>
+            </select>
+        </div>
+        <button type="submit">Register!</button>
+    </form>
+
+
+
+
+
+    <hr>
+</body>

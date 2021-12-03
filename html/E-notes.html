@@ -1,0 +1,267 @@
+<!-- HTML is the content, css is the style applyed to content, javascript is actions of the elements -->
+<!-- ALL ABOUT SYMANTIC MARK UP SYTAX WITH MEANING -->
+
+<!-- doctype tag simple tells browser we're using html and it latest version -->
+<!DOCTYPE html>
+<!-- html tag again just lets brower know were using html -->
+<html lang="en">
+<!-- my understanding the head and meta tag serve purpose in seo or letting the browser or seach engine 
+    know what your site is about basiclly also used to link in other docs or elements-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-notes</title>
+<!-- CSS -- to link our css style sheet we use our" <link rel="stylesheet" href="example.css"> "-->
+<link rel="stylesheet" href="example.css">
+</head>
+<!-- body element hold all the content included and created -->
+
+<body>
+    <!-- all h1 through 6 elements are a form of header in heirachy by number
+    1 being mos important 6 least -->
+    <h1>E-NOTES</h1>
+    <!-- p tag is an block element that u guessed it use for paragraphs of content and the like -->
+    <p>welcome to about panthers page</p>
+    <!-- the main content of your page not to be reapeted elsewhere   -->
+    <main>
+        <h2>the main content of your page not to be reapeted elsewhere</h2>
+        <!-- nav gives meaning to content identifing it as the navigation element for site -->
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>products</li>
+            </ul>
+        </nav>
+        <!-- article is a self-contained composition in a doc page app or site intended to be reusable
+the template -->
+        <article>
+            <h2>braking news:man lands lucrative development job(in article tag)</h2>
+        </article>
+        <!-- section represents a stand alone section of the site or content -->
+        <section>
+            <h3>chapter 1(article <i>section</i>)</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque reiciendis harum omnis, sed fugiat
+                perferendis laudantium eaque optio natus. Laudantium magni consequatur iste sequi hic atque nihil quos
+                accusantium maxime!</p>
+        </section>
+        <!-- aside content to the side extra little notes or related content or reccomendations ect.. -->
+        <aside>
+            <p>what the man had to say about landing the position (side notes)</p>
+        </aside>
+        <!-- header is the introduction content also lots of time includes the navigation 
+can also have headers and footer withn say a article or documnet page ect..-->
+        <header>
+            <h2>header contain intro content</h2>
+        </header>
+        <!-- footer is the footer of document can include resources link and 
+any legal stuff like copyright ect.. you ca have more than one footer and 
+header on one page  -->
+        <footer>
+            <h2>hi i am footer (bottom of page stuff u know)</h2>
+        </footer>
+        <!-- time is inline element get wraped aroung something representing a time 
+    or date ectt. -->
+        <time>november 12 2021</time>
+        <!-- figure element for signifiying an img chart some time of visual content 
+    illistration or diagram ect.. -->
+        <figure></figure>
+        <!-- figcation is what it sounds like the cotion for the figure being displayed -->
+        <figcaption></figcaption>
+        <!-- other that were mentioned and can look at later  -->
+        <abbr></abbr>
+        <date></date>
+        <!-- br and hr stand for line break and hrizontal marginor line i think not very
+commonly used anymore as their action can be done better with css also dont reqire closing tag-->
+        <br>
+        <hr>
+        <!-- a tags or anchor tag are utilized to give an element the atribute of a like where you click on 
+a picture or highlited word and it directs you to the given target wherther it be a different webpage
+picture or content or portion of the site itself -->
+        <a href="https://youtube.com" target="_blank">a tag to youtube.com</a>
+        <!-- ol ordered list and ul unordered list both perant element to li list item and are just as they sound
+one is ordered n numbered the other is not. can also be nested within eachother -->
+        <ul>
+            <ol>
+                <li>list item within a list</li>
+            </ol>
+        </ul>
+        <!-- we also have other element that help with content ex. video images and audio all require a src="" attribute to 
+tell it where to find the content whther something on your computer or something on the web.
+they also have other attribute within them like "muted" "autoplay" "controls" "alt" ect.. 
+note that img is self closing while other to require a closing tag-->
+        <img src="my-image.jpeg" alt="my image of food">
+        <audio src="my-audio.mp4" muted alt="my audion"></audio>
+        <video src="my-video.mp4" controls alt="my video"></video>
+        <!-- we also have tag caled super and sub text that bring up or down selected text like for formulas or exponens
+for example or anything else youd like  (wraped in p tag for example-->
+        <p><sup>1</sup>/<sub>2</sub></p>
+        <!-- we also have a libary of whats called entities can think of them like emotes or symbol 
+they always start with "&" and end in a ";" -->
+        &hearts; &spades; &reg;
+        <!-- div or sevition is used to hold thing or group things together 
+    div is a block element a sort of general container-->
+        <div>devition i am in a div tag</div>
+        <!-- a spn is a inline element gereic element used to target specified content
+    ina line -->
+        <span>its a me a <a href="span.com"><sub>SPAN</sub></a></span>
+        <span>span here</span>
+
+        <!-- tables used for displaying data made or rows and columns can have header subheader links pictures 
+            tables used for tabulor data ect.. also learened table are very nested and take goo bit of space-->
+        <table></table>
+        <!-- td or table data cell represent a cell withing the table element -->
+        <td></td>
+        <!-- tr or table row is a literal row that creates the table and houses the td's or table data as well as
+        the th or table header's-->
+        <tr>
+            <td></td>
+        </tr>
+        <!-- then we have table th or table headers which is the title at top of table telling you what data is bieng displayed
+        whether its the name size height weight ect.. -->
+        <tr>
+            <th></th>
+        </tr>
+        <!-- we also have a thead and tbody elements that behave simlilar in purpose like actual head and body tag. where thead houses 
+        the headers in our table and the tbody houses our content or the body of the table. 
+        we also have tfooter that again serve purpose of a reg footer just simply for the table specificlly -->
+        <thead></thead>
+        <tbody></tbody>
+        <tfooter></tfooter>
+        <!-- important element involved with tables is our colspan="#" and rowspan="#" this is ofeten use when we have multiple 
+        headers unde a single catagory or like were basiclly telling table how many rows or column this element(header)
+        should span whether take up 3 rows and 1 column ect.. -->
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">animal</th>
+                    <th colspan="2">avarage mass</th>
+                    <th rowspan="2">flighted</th>
+                </tr>
+                <tr>
+                    <th>LB</th>
+                    <th>KG</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>eagle</td>
+                    <td>20lb</td>
+                    <td>100kg</td>
+                    <td>yes</td>
+                </tr>
+                <tr>
+                    <td>falcon</td>
+                    <td>15lb</td>
+                    <td>75ikg</td>
+                    <td>yes</td>
+                </tr>
+                <tr>
+                    <td>emu</td>
+                    <td>200lb</td>
+                    <td>500kg</td>
+                    <td>no</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- forms element is container holding all the inputs checkboxes buttons ect.. contains controls for submitting 
+information including where to send the inforation via attributes like {action, method, action= where the info gets sent-->
+        <form action="where info gets sent"></form>
+        <!-- within form ther are several types of <inputs type="example" raging from text, date , time,emai, password, even color.
+        and in those input thers an element called placeholder goes within self closing input tag that is exactly how it sound provide some context to 
+        the form area -->
+        <input type="text" placeholder="input text here">
+        <!-- also within form we have lables that give more context or instruction regarding the input also lable connect 
+        directly to the input form  so when you click the lable u access the input form you accomplish this 
+    with an atrribute of for and id tag with matching name for tag in lable and id in inputs tag-->
+        <label for="example">example</label>
+        <input id="example" type="text" placeholder="example">
+        <!-- another elment within form is buttons that also have a type value ex. submit, button, ect.. give it different functions and 
+also requires closeing tag and button defult type is to submit the form typically bottom of form page or elswhere within form-->
+        <button type="submit">i submit the form</button>
+        <!-- important atribute within the input tag is our name tag name="value of input type" say input name="password" and i input "123abc"
+when i submit the input password recives a value of "123abc"ex. below returns[http://127.0.0.1:5500/username?username=draimius]
+note i put draimius as username and submited end of url shows input type and value submitted-->
+        <form action="username">
+            <input type="text" name="username">
+            <button type="submit">submmit username</button>
+        </form>
+        <!-- funexample below where we used ohter web pages's search funtions whithin our on form by submiting input to their site
+under their name value they use ex. search_query or q ect.. vary upon site (side note fomr selction can also be submited by pushing
+enter key same result as button push-->
+        <form action="https://www.youtube.com/results?" target="_blank">
+            <input type="text" name="search_query">
+            <button>serch youtube</button>
+        </form>
+        <!-- also apart of form included other input options like radio buttons (select oonly on) also check boxes also
+             attribute witin those element like setting box to be auto checked or specified selelction is set as defult ect..
+            also below great example of label and id linking also use of value atribute-->
+        <form action="order">
+            <input type="checkbox" name="agree-tos" id="agree-tos" checked value="agree">
+            <label for="agree-tos">Agree to term of service</label>
+            <button>submit</button>
+
+            <label for="S">Small</label>
+            <input type="radio" name="size" id="S" value="small">
+            <label for="M">Medium</label>
+            <input type="radio" name="size" id="M" value="medium">
+            <label for="L">Large</label>
+            <input type="radio" name="size" id="L" value="large">
+            <lable for="color">select color</lable>
+        </form>
+        <!-- other element use in forms id the drop down selection which unlike other is made utilizing to additinal 
+            tag themselves and not atribute added to exsiting input or label (side note:can leave first option blank
+             and placehomlder to provide more context to options-->
+        <form>
+            <select name="color" id="color">
+                <option value=".">Please chose an option</option>
+                <option value=red>Red</option>
+                <option value=red>black</option>
+                <option value=red>blue</option>
+                <option value=red>orange</option>
+                <option value=red>yellow</option>
+            </select>
+        </form>
+        <!-- also witihn input types like range and number we can set value starts with with value="" also can set a minimum and maximum
+using tags min="" & max="" so selection has to be within that rage we set also atribut called step="" which tells the input
+how to count whether by 5, 2, 10 ect.. (side note name="" atribute always goes within the input -->
+        <form action="quantity">
+            <lable for="num-shirts">number of shirts</lable>
+            <input type="range" id="num-shirts" name="quantity" step="5" min="5" max="50" value="30">
+            <label for="number">select number</label>
+            <input type="number" placeholder="number" name="number" step="5" value="10" min="10" max="50">
+            <button type="submit">submit</button>
+        </form>
+        <!-- within form like select and option tag ther also a <textarea tag that is its own tag and requires a clising tag this is use
+for messages or additianl info its a text area just like it sounds. textarea also has atributes rowspan and colspan that setermine
+the span of row and clomns the textarea takes up in display on page   -->
+        <form action="message">
+            <lable for="message">additinal information</lable>
+            <textarea id="message" rows="10" cols="50" name="message"></textarea>
+            <button type="submit">submit</button>
+        </form>
+        <!-- form validation built in validations we learned about requried attribut that just like it sound requires user fill out form/input 
+    for it to allow user to submit  also input atributs of minlength maxlegnth that set perameters the user most follow and meet
+when providing the info submittin (username min of 5 character max of 20) also type="email"/url ectt.  has ther own where it looks 
+for a specified patter to be met before allowing submiting like (email looking for @ sigh and text before and after it ect.. -->
+        <form>
+            <label for="username">verify username</label>
+            <input type="text" id="username" name="verify" required minlength="5" maxlength="20">
+            <label for="email">verify email</label>
+            <input type="email" id="email" name="email" required minlength="5" maxlength="20">
+        </form>
+
+<!-- NOW GOING INTO CSS -->
+
+
+
+
+
+
+
+
+
+    </main>
+</body>
+
+</html>

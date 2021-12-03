@@ -1,0 +1,161 @@
+                /* FLEXBOX - allow for elemtn positoning made easier */
+/* by defult content goes left to right we can change this with flex-direction: */
+body {
+    font-family: 'Opn Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-weight: 400;
+
+}
+    /* flex-direction: dictate order of how content is displayed ex. reverse,- row/column */
+/* when flex display is applyed element staywithin and ajust themsleves within thier container/parent 
+element in this case set to 500px so the div's change thier height to fit within those constainst */
+#container. {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: column;
+}
+#container. div. {
+    width:200px;
+    height: 200px;
+}
+    /* justify-content: - how content is distributed across the main axis ( axis is relative to flex-dirention) defult at flex-start */
+/* we have flex-start/end center ,spcae-between , space-around, space-evenly */
+#container. {
+    background-color: #003049;
+    width: 90%;
+    height: 1200px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+        /* Flex-wrap: -  */
+/* no-wrap / wrap / wrap-reverse  flips on cross axis aka not mian axis */
+#container. {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+#container. div. {
+    width: 30%;
+    height: 200px;
+    text-align: center;
+}
+        /* justify-content: - is the main axis the is relative to flex-direction */
+#container. {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+#container. div. {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+            /* align-items:  - is the cross axis relaitve also to the flex-direction  (felx/start/end center also
+baseline - works of text in elements to align using bottom line drawn across touching all text*/
+#container. {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+            /* align-content  - (space between the row/columns) used to control or distribute space along the cross axis when mutiple row/columns*/
+/* only works when there is a wrap property applied */
+#container. div. {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+#container. {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: center;
+}      
+/* all previuos properties get applied to the container its self all but (align-self)  */
+            /* align-self  - add to individual items/elemsnt within the container*/
+#container div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*when set to column alwayscontrols the y axis */
+    align-items: flex-end; /* not 100% wwtf this one does dosent seem to do anythin when i change it believe its conflicting with another reaso why but just not sure on this one more reaserch on this one*/
+    flex-wrap: wrap;
+    align-content: center; /*move everything togother at once */
+} 
+div:nth-of-type(5) {
+    align-self: center ; /* is basicly align-content but for individual elements */
+}
+div:nth-of-type() {
+    align-self: center;
+}
+div:nth-of-type() {
+    align-self: ;
+}
+
+/* align-items and align-content and align-self work on the Cross Axis 
+ only align-items and justify-content have (space between/around) */
+/* justify-content wrok on the Maon Axis */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

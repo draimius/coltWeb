@@ -1,0 +1,127 @@
+        /* Transitions - transtions of elements */
+/* can set to specified property name, how long that take (duration), delay and then "timing function" 
+   "transition: (property) color (duration in sec) 1s (timimg funtion) ease-in (delay in sec) 2s; "   */
+/* ex. of property name  */
+div {
+    width: 200px;
+    height: 200px;
+    background-color: turquoise;
+    border: solid black 7px;
+    transition: background-color 3s,border-radius 1s;
+    margin:10px;
+}
+div:hover {
+    background-color: violet;
+    border: solid black 7px;
+    border-radius: 50%;
+}
+    /* timing function - the rythym of the transition ex.fast-slow slow-fast- variation ect.. ex. ease in/out/in-out linear step start/end*/
+/* (side note) transition and property selection goes on root element along with the duration and delay,while transiting element
+ simply has proprty specifications as to where/how u want it to diplay after transiton's */
+section div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(128, 224, 64);
+    border: solid black 7px;
+    transition: margin-left 3s; /* ease-in; */
+}
+    /* always single out transitions */
+section:hover div {
+    margin-left:500px ;
+}
+section div:nth-of-type(1) {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+section div:nth-of-type(2) {
+    transition-timing-function:ease-in ;
+}
+section div:nth-of-type(3) {
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+section div:nth-of-type(4) {
+    transition-timing-function:ease-out ;
+}
+            /* Transform: -  tranforming element ex."rotate" "scale" ecr..*/
+h1 {
+    font-size: 30px;
+    text-align: center;
+    width: 400px;
+    padding: 10px;
+    margin: 20px auto;
+}
+section h1:nth-of-type(1n) {
+    background-color: #E76F51;
+    border: 3px solid black;
+    color:white;
+}
+section h1:nth-of-type(2n) {
+    background-color: #F4A261;
+    border: 3px solid black;
+    color:white;
+}
+section h1:nth-of-type(3n) {
+    background-color: #E9C46A;
+    border: 3px solid black;
+    color:white;
+}
+section h1:nth-of-type(4n) {
+    background-color: #2A9D8F;
+    border: 3px solid black;
+    color:white;
+}
+/* side note good use of :nth-of-type()well played */
+/* trasform ratotae units of degres px ect. can also chose where rotation i shappening from top,left,right,center ect. and can also
+rotate also the axis's x, y, z for some 3d'ish effects */
+    /* Rotate - no X/Y simply the one value */
+section:nth-of-type(2) h1:nth-of-type(1) {
+    background-color: #E76F51;
+    border: 3px solid black;
+    color:white;
+    transform: rotate(15deg);
+    transform-origin: right;
+}
+    /* Scale - transform:scale(width 1, height 2) can also do scaleX(#) and Y  */
+section:nth-of-type(2) h1:nth-of-type(2) {
+transform:scale(0.7)
+}
+    /* Traslate - alows us to move elements/ also in X/Y unit , deg,px,radients,turns ect.. for all transofrm */
+section:nth-of-type(2) h1:nth-of-type(3) {
+transform: translate(-30px, -30px); /* X then Y */
+}
+    /* Skew -  no X/Y for skew simply writen 2 value seem they can all for most part do that im practice tat way keep simple*/
+section:nth-of-type(2) h1:nth-of-type(4) {
+    transform:Skew(30deg)
+    }
+section:nth-of-type(3) h1:nth-of-type(1) {
+    transform:Skew(30deg, 5deg);
+    }
+    /*  can combbine transformation */
+/* scale + rotate */
+section:nth-of-type(3) h1:nth-of-type(2) {
+    transform: rotate(-10deg) scale(1.5);
+    }
+/* translate + rotate + scaleX/Y  */
+section:nth-of-type(3) h1:nth-of-type(3) {
+    transform: translate(-300px) rotate(180deg) scaleY(1.5);
+}
+    /* NOTE: X/Y + 2 values ()'s for [translate,Skew,Scale] NO X/Y only 1 value for [rotate] 
+        require unit for [translate,rotate,Skew,]  not require unit [Scale] */
+            /* Transform applies to all content nested within element being transformed */
+section:nth-of-type(3) {
+    transform: scale(0.8, 0.5) translate(500px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

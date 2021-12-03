@@ -1,0 +1,191 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ___________________________________________________________________________________________________ */
+
+        /* My declarations */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* sem we always set the container first main parent */
+body {
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+main {
+    border-radius: 10px;
+    padding:15px 25px;
+    background-color: whitesmoke;
+    width: 100%;
+    max-width:960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+section {
+    border-bottom:1px #e1f1ff solid;
+}
+section:nth-of-type(3) {
+    border-bottom: none;
+}
+img {
+    margin-bottom:25px;
+    max-width: 100%;
+}
+h2 {
+    color: #888;
+    letter-spacing:1px;
+}
+ul  {
+    margin:50px 0 25px;
+    color: #016ff9
+}
+li {
+    color: #016ff9;
+    letter-spacing:1px;
+    padding:15px;
+    line-height: 1.5;
+    font-size:10px;
+    border-top: 1px #e1f1ff solid;
+    font-weight: 800;
+}
+li:nth-of-type(even) {
+    letter-spacing:1px;
+    padding:15px;
+    line-height: 1.5;
+    font-size:10px;
+    border-bottom: 1px #e1f1ff solid;
+}
+span {
+    color: #016ff9;
+font-size: 32px;
+display: block;
+margin-bottom: 50px;
+}
+a {
+    border: 1px solid #9dd1ff;
+    display: inline-block;
+    padding:15px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    color:#348efe;
+    margin-bottom: 25px;
+    transition: background-color 400ms ease-in-out;
+}
+a:hover, a:focus {
+    background-color: #e1f1ff;
+}
+#special {
+    background-color: #48aaff;
+    color:white;
+}
+#special:hover, #special:focus {
+    background-color: #269aff;
+    color:white;
+}
+/* Making site responsive - aka media quesries */
+@media (min-width:850px) {
+    main {
+        flex-direction: row;
+    }
+    section {
+        border-bottom: none;
+        padding:25px 50px;
+    }
+    section:nth-of-type(2) {
+        border-right:1px solid #e1f1ff;
+        border-left:1px solid #e1f1ff;
+    }
+    span {
+    margin-bottom: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

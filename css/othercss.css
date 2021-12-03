@@ -1,0 +1,76 @@
+/*          Other CSS properties */
+/* ex. transitions, position property, opacity & alpha hanel, google fonts, transform, story on background property */
+.other {
+    width:300px;
+    height: 300px;
+    background-color: plum;
+}
+    /* Alpha Chanel - control trasparency of element your using it for only  */
+#rgba {
+    width:50%;
+    height:50%;
+    background-color: rgba(255,255,255,0.7);
+    color: rgba(0,0,255,0.8);
+}
+    /* Opacity - sets opacity of an whole elment including nesteds and not just element selected value 
+    from 1=solid to 0=complete transparent  (can also be coded with hex ex.f5f5f5_f1 last 2 digit rep opacity*/
+#opacity {
+    width:50%;
+    height:50%;
+    background-color: rgb(255, 238, 2);
+    color: #01122285;
+    opacity: 0.3;
+}
+/*      Position Properties - determines element position in documnet top,right,bottom,left proprties 
+determine final location positoin */
+    /* ex. static, relative, absolute */
+div {
+    background-color: steelblue;
+    width:100px;
+    height: 100px;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 10px;
+}
+#middle {
+    background-color: seagreen;
+}
+    /* static is the defult position  */
+#static #middle {
+    position:static;
+    top: 100px;
+}
+/* relative move element relative ti it original static position still maintaning its space */
+#relative #middle {
+    position:relative;
+    top:50px;
+    right: 50px;
+}
+/*      Absolute moves relative to its nerest parent element with a "position property" if not nested then relative
+ to body display in this example now that i add position to parent element od relative now the middle in absolute 
+ is offsetting from the top left conrner of the section itsself and no longer body element */
+/* absolute also takes up no space behaves as if its on a layer above the rest (notice blue box closer 
+as if green wasnt there but in relative the space is left open key diferences
+absolute = stuck in place and mesurment (changing screen size changes its location ie.may be cuase px but not sure)*/
+#absolute {
+    position: relative;
+}
+#absolute #middle {
+    position: absolute;
+    top: 0px;
+    right: 1000px;
+}
+        /* Fixed -  is always relative to the original containing block/element and is fixed to the page 
+notice when you scroll it stay on screen same position ragerless of content or scroll in page
+fixed =stuck in place on web page*/
+#fixed #middle {
+    position: fixed;
+    top: 0;
+}
+        /* Stickly - starts not in its place till hits top of page and becomes fixed */
+
+
+
+
+
+

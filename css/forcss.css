@@ -1,0 +1,161 @@
+/* css writen in rules */
+/* we select something give it a target then apply the cchosen property */
+
+/* color and background-color one for text itself and other for background color of element selected */
+/*      COLOR SYSTEMS   RGB color:(255, 255, 255) range form 0 to 255  can serach color picker to get values
+                        hexidecimal color: #f74653 where first 2 digits represent red channel next two the green and last two blue channel
+                        ff in hex is like saying 255 for that color channel can also short hand hex when same value within same chanel
+                        ex. #cc5522 shorten to #c52*/
+h1.{
+    color: #e64637;
+    background-color: rgb(255, 255, 255);
+}
+/* text-aling withing its element how the text is alingned within its element several option from left,right,center, ect..*/
+h1.{text-align: center;}
+/* font-weight controls the boldness can be set to bolder,light,bold,normal and also select a numeric value*/
+h1.{font-weight: 400;}
+/* text-decoration add or remove decoration to/from text chocei to mix match elements of the color, style, line type, and its thickness.
+ each with its own set of options from the colors, style wavy dotted ect.. under/avore through line.*/
+h1.{text-decoration: blue underline wavy ;}
+a.{
+    text-decoration: none;
+}
+/* line-height control hieght of line and not text itself  */
+p.{
+    line-height: 1.5;
+}
+/* letter spacing exactly what it sounds like */
+h1. {letter-spacing: 1.5;}
+/* change text size with "font-size unit of mesurant varies widely form "absolute units" and "relative units" ab.ex=px ect.. */
+h1.{ font-size:55px;}
+/* change font with font-family: exmaple, ex,ex the sans sefif below tells brower to chose anyother font in font family of sans serif
+they're listed in priority 1st bieng one we want to use but if not supported just to the next one and so forth */
+h1.{
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+}
+/* slectors different way to apply rules "selector{ poperty: value;}"  */
+/* can use comma to combine selectors aplying same rules to both element */
+h1.,h2. {
+    color:darksalmon;
+}
+                /* for ecirsec   */
+body {
+    background-color:#f1faee;
+}
+button{
+font-size: 20px;
+background-color:#1d3557;
+color: #a8dadc;
+}
+h1,h2 {
+    color:#1d3557;
+}
+/* id's should only be used once to identify unique onetime  */
+#signup {
+    color:#1d3557;
+    background-color:#a8dadc;
+}
+span{
+    color:#457b9d;
+}
+/*          most used are selector, id, classes, and decentdent  */
+/* classes  identifiyer you will use more than once  */
+/* decendent selector targeting element by specifine these nested is this element ect.. ex "header a {#}" 
+also works with classes and id's ex ".#example span {#}*/
+/* also sibling selector element on same level in format html not used very often but good to know " h2 + p {#}" */
+/* and another that seem more usefule in my eyes is direct child selector just as is sound chosing the child of the 
+direct parent to apply styling to " header > h1 {#}" */
+.tag {
+    background-color:#e63946;
+    color: #f1faee;
+    font-size:18px;
+}
+.post a {
+    color: #e63946;
+    }
+    nav a {
+    color: #457b9d;
+    }
+/*          Atribute selector */
+/* atribute selector insure there is no space between selector and atribute ex. "input[type="password"] 
+no spaces seleting the selector and atribute (wide variation of atribute selector and thier targeting 
+ex. ~, *, $, all refering to something different about the tergeting ellement as they start with this letter 
+or word or end with said letter or word or even simly contain letter or word ect.. case sensitive or not
+lots of dif selecting and targeting but not sure commonly used  */
+input[type="password"] {
+    color: #e63946;
+}
+a[href*="Puppies"] {
+    color: fuchsia;
+}
+            /* Pseudo classes selector */
+/* represent keyword secifies a special state of the selected element ex.active,checked,hover,first,
+not(),:nth-child() ect.. all start with ":" */ 
+/*    (side not on specifisity overrides the more specific you are in targeting the more inportant is places on those
+rules ex. genneral h1 will be overide by class".h1" and it overided by id"#h1" ect..) */
+button:hover {
+    background-color:#e63946;
+    color:#f1faee;
+}
+.post button:hover {
+    background-color:greenyellow;
+}
+.post button:active {
+    background-color:fuchsia;
+}
+.post a:hover {
+    font-weight: bolder;
+    text-decoration: overline;
+}
+            /* as seen can combine mix and match with the selectors  */
+/* :nth-of-type(#) slects that one in order :nth-of-type(#n)  adding "n" now its every # in that element/class
+ ect selected ( also wide range of psudo classes */
+.post:nth-of-type(2n) {
+    background-color: #d6deeb;
+}
+
+            /* Pseudo elements */
+/* similar to pseudo classes but alows you to style a particular Part of the selectd element 
+(mdifiyers) writen with"::" ex. after,first/letter,line , selection,slotted,file-selector-button ect. */
+h2::first-letter {
+    color: #e63946;
+    font-size: 30px;
+}
+p::first-line {
+    color:fuchsia;
+}
+p::selection {
+    background-color: goldenrod;
+}
+            /* The Cascade = the order styles are declared matters */
+ /* this goes for all element and stylesheets themselves aswell last declaration wins
+ (excluding classes and id's) */ 
+/* }in this example h1 will apear blue due to the order of declaration where first red then ending in blue */
+
+h1. {
+    color:red;
+}
+h1. {
+    color:blue;
+}
+        /* Specifisity
+when you have a colflict between styles aplplyed to element  the more specified wins
+ex. least to most (elements/pseudo elements) < (classes,stributes,pseudo classes) < (ID's) <dont use but know (!important) 
+        Inheritance  */
+/* <article>
+<blockquote>color inherited from arcicle element</blockquote>
+<h6>color inherited from arcicle element</h6>
+</article> */
+    /* in this example the h6 and blockquote text inhearit the color ofthier parent properties of article, if the elemests within 
+    parent dont have a specified atribute that conflict or win in secificity it will inheart the parents declaration */
+article {
+    color: olivedrab;
+}
+/* the closer the parent more specificity is weighted/ some element and properties dont inherit by dufault for this u can use
+ value of "inherit" (not super common)in which ever property u want for it to inherit */
+article. {
+    color:inherit;
+}
+
+        /* The Box Model */
+/* [display proprties , units ](width, height, border, padding, and margin) border radius */

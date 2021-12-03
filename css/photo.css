@@ -1,0 +1,22 @@
+body {
+    font-family: 'Raleway', sans-serif;
+
+}
+img {
+    height:20em;
+    width: 30em;
+    margin: 1.6666%;
+    /* calc(10%/6); */
+}
+nav {
+    text-transform: uppercase;
+    font-weight: 800;
+    border-bottom: 2px grey solid;
+    width: 30%;
+    margin-left: calc(10%/6);
+    padding: 1.2em 0em;
+    font-size: 1.5em;
+}
+/* note colt used image with same aspect ration so had no need to all height and mess with keeping aspect ratios
+so we proceesed with the core of lesson and achieve same result just some of are image bit smuched do to the 
+different in ration no biggie core lesson still aplies */

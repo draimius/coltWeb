@@ -1,0 +1,160 @@
+        /* Box Model */
+/* height and width control those aspects of the content box */
+div. {
+    width:200px;
+    height:200px;
+    background-color: olivedrab;
+}
+h1. {
+    background-color: orchid;
+    width: 100px;
+}
+/* Border = border/width, color, style all 3 need to be declared to creat border */
+#one {
+    background-color: #9afa7d;
+    border-width:5px;
+    border-color: black;
+    border-style: solid;
+    /* box-sizing: border-box;  helpful to set size of wholecontent and bordr box */
+}
+#two {
+    background-color: #6eb359;
+    border-color: blueviolet;
+    border-width: 5px;
+    border-style: dashed;
+}
+/* short hand of "border: width style color" all in one go  */
+#three {
+    background-color:#49783b ;
+    border: 3px red solid;
+    border-left-color: #00ffff;
+    border-left: dotted;
+    box-sizing: border-box;
+    border-radius:20px;
+}
+/* (side note border padding margin can all be shorthanded plus decalred for specified side lefr.right,top ect..) */
+    /* Padding the space between content and border (padding dosent work same with box-siizing property*/
+h1. {
+    padding-left: 100px;
+    padding-top:50px;
+}
+#two {
+    background-color: #6eb359;
+    border-color: blueviolet;
+    border-width: 5px;
+    border-style: dashed;
+    padding-right:50px;
+}
+/* for short hand always starts clockwise from top,right,bottom,left and if only 2 digits then topand bottom 
+then left and right and if 1 digit appies than to all four sides */
+button. {
+    padding: 10px 20px 30px 40px
+}
+    /* Margin = space between elements borders, space outside border*/
+body. {
+    margin:0;
+}
+
+#four {
+    margin: 30px 20px 20px 30px;
+}
+
+        /* Display = how element are displayed ex.(inline,block, inline-block) */
+/* block level = takes up whole row  inline = oly takes space need and allows other element on same row
+when inline width and height are ignored, padding lays over other content and not pushed away,
+margin only respected horizontaly only in the line its in */
+/* inline-block mixes proprties of both where now they share row and height,wdith,margin,padding are respected 
+and applied*/
+h1 {
+    background-color: darkgoldenrod;
+    border: 1px solid black;
+    display:inline;
+}
+span {
+    background-color: palegreen;
+    border: 1px solid black;
+    display: block;
+}
+            /* Units [relative and absolute */
+/* relative units= em rem vh vw % ect commonly used  with width and height - referancing the parents elements width and height 
+but can be used elsewhere as well ex. font-size behaves diferently depending on the property*/
+/* "%" */
+section {
+    background-color: darksalmon;
+    width:400px;
+    height:400px;
+}
+section div {
+    background-color: darkseagreen;
+    width:70%;
+    height:50%;
+}
+h3 {
+    font-size:40px;
+    border: 1px solid black;
+    line-heigh: 20%;
+}
+/*       "em" - 1em = 1*size of parent element 2em = 2*size of parent element ect..*/
+/* this exmple articel is parent - p and h2 font-size are relative to the articles font-size chenge to parent changes "em" element */
+article. h2. {
+    font-size: 2em;
+}
+/* all em's are relative to parent sizing where they exist  */
+ article {
+     font-size: 20px;
+ }
+ article p {
+     font-size: .5em;
+ }
+/* common to use "em" with properties like padding and margin em in those is relative to size of element itself and not parent*/
+/* in this example margin is based on what ever the font-size element has at moment */
+article h2 {
+    font-size: 2em;
+    margin-left: 1em;
+}
+/* element do not scale the best utilizing px u change one proprtie and the whole look changes dosent scale together */
+/* this example have multiple button within different element h2 p and byitself and notice in display the size of 
+button is adjusted to the relative units of the element its nested in but hold the same shape  */
+article button {
+    font-size: 1em;
+    padding: 0em 1em;
+    border-radius: .5em;
+    color: white;
+    background-color:olive;
+}
+/* coomon issues with "em"  that is always besed upon parent size */
+/* in this example with have element nest within each other utilizing eachother(aka same tags ul in li ect..)
+and becuase always dependent on parent the nested element grow exponetianly and get very big or very small quickly */
+ul {
+    font-size: 1.5em;
+}
+        /* "rem"  - are relative to the ROOT html elements font size often easier to work with */
+/* exmaple. if root 20px 1rem = 20px always if 2rem then 40px and so forth ect..  (rem seems best way to go */
+/* notice in this example elemtns set to same rem appear the same size and dont very upon parent sizing */
+#rem {
+    background-color: pink;
+}
+#rem h2 {
+    font-size: 3rem;
+}
+#rem h4 {
+    font-size: 3rem;
+}
+#rem ul {
+    font-size: 1.5rem;
+}
+#rem button {
+    font-size: 1.5rem;
+}
+#rem p {
+    font-size: 1rem;
+}
+/*      both em and rem have their place and uses where one better than other important to simply keep in mind how 
+they oporate and work (em great for small components reusable and want it to scale up/down nicely not comprimise look/shape*/
+
+
+
+
+
+
+

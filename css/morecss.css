@@ -1,0 +1,52 @@
+                 /* Background - differnt atributes and uses */
+/* ex. background-image: /and sub properties (size -cover/stretch/auto ) also have background-repeat (X/Y no ect..
+    we have bacground-position and subs - top,bottom,right,left) also less comon one like attachment,clip,origin ect..*/
+.section {
+    width:80%;
+    height:800px;
+    background-color: tomato;
+    margin: auto;
+    background-image:url("https://images.unsplash.com/photo-1606766923156-15fa276e8f07?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+}
+/* can use shorthand and decalere all at once ex. background: no-repeat (url/color/img) [cneter/cover]
+only 1 rule is that position must be followed by size ex. "center/800px" size unti can be em,rem,%,px ect.. */
+h1 {
+    font-size:100px;
+    color:white;
+}
+/* can also have miltiple backgrounds at once whether that be an image/color even (vid i believe) 
+not super commong have mutiple but good to know (note made links smaller so can see what im doing)*/
+section {
+    width:80%;
+    height:800px;
+    background-color: tomato;
+    margin: auto;
+    background: no-repeat center/60% url("https://tinyurl.com/y49wtmrt"), no-repeat center/cover url("https://tinyurl.com/y236thp6");
+}
+                /* Google Fonts -  give you tag to use awsome (give html and css code noice*/
+/* can use multiple font in doc for dif thing like one for headers one for paragraphs ect.. (take acct what font weight you will be using insure you add those selections)*/
+body {
+    font-family: 'Nerko One', cursive;
+}
+main h1,h2,h3{
+    color:black;
+    font-family: 'Texturina', serif;
+}
+main {
+    width:80%;
+    height: auto;
+    margin:auto;
+    margin-bottom: 7em;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
